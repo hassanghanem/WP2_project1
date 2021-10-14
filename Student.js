@@ -56,13 +56,13 @@ $(document).ready(function () {
             $('#p4').hide();
         }
         if (date.length == 0) {
-            $('#p4').show();
+            $('#p5').show();
             var msg = $('#p4').text('Please enter date');
             $('#date').focus();
             return false;
         }
         else if (date.length > 0) {
-            $('#p4').hide();
+            $('#p5').hide();
         }
 
 
