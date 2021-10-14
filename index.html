@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/64d58efce2.js"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="HomePage.js"></script>
+    <script src="validation.js"></script>
+    <title>Sign in & Sign up Form</title>
+    <script src="validation.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="sweetalert.js"></script>
+    <style>
+        .results tr[visible='false'], .no-result {
+            display: none;
+        }
+        .results tr[visible='true'], .no-result{
+            display:table-row;
+        }
+
+
+    </style>
+
+
+
+</head>
+  <body style="overflow:hidden;">
+      <div class="container">
+          <div class="forms-container">
+              <div class="signin-signup">
+                  <form name="myform" action="#" class="sign-in-form" onsubmit="ValidateLogin()">
+                      <h2 class="title">Sign in</h2>
+                          <div class="input-field" id="lemail">
+                              <i class="fas fa-user"></i>
+                              <input type="email" id="email" placeholder="Email" />
+                          </div>
+
+                      <div class="input-field" id="lpassword">
+                          <i class="fas fa-lock"></i>
+                          <input type="password" id="password" placeholder="Password" />
+                      </div>
+                      <div>
+                          
+                           <input type="submit" value="Login" class="btn btn-outline-primary" />
+                      </div>
+                      
+                      
+                      <p class="social-text">Or Sign in with social platforms</p>
+                      <div class="social-media">
+                          <a href="#" class="social-icon">
+                              <i class="fab fa-facebook-f"></i>
+                          </a>
+                          <a href="#" class="social-icon">
+                              <i class="fab fa-twitter"></i>
+                          </a>
+                          <a href="#" class="social-icon">
+                              <i class="fab fa-google"></i>
+                          </a>
+                          <a href="#" class="social-icon">
+                              <i class="fab fa-linkedin-in"></i>
+                          </a>
+                      </div>
+                  </form>
+                  <form action="#" class="sign-up-form" onsubmit="ValidateRegister()">
+                      <h2 class="title">Sign up</h2>
+                      <div class="input-field" id="rfirstname">
+                          <i class="fas fa-user" ></i>
+                          <input type="text" id="firstname" placeholder="First name" />
+                      </div>
+                      <div class="input-field" id="rlastname">
+                          <i class="fas fa-user"></i>
+                          <input type="text" id="lastname" placeholder="Last name" />
+                      </div>
+                      <div class="input-field" id="rphone">
+                          <i class="fas fa-phone"></i>
+                          <input type="tel" id="phone" class="inputFielsd" placeholder="Phone number" />
+                      </div>
+                      <div class="input-field" id="remail0">
+                          <i class="fas fa-envelope"></i>
+                          <input type="email" id="email0" placeholder="Email" />
+                      </div>
+                      <div class="input-field" id="rpassword0">
+                          <i class="fas fa-lock"></i>
+                          <input type="password" id="password0" placeholder="Password" />
+                      </div>
+                      <input type="submit" class="btn btn-outline-primary " value="Sign up" />
+                      <p class="social-text">Or Sign up with social platforms</p>
+                      <div class="social-media">
+                          <a href="#" class="social-icon">
+                              <i class="fab fa-facebook-f"></i>
+                          </a>
+                          <a href="#" class="social-icon">
+                              <i class="fab fa-twitter"></i>
+                          </a>
+                          <a href="#" class="social-icon">
+                              <i class="fab fa-google"></i>
+                          </a>
+                          <a href="#" class="social-icon">
+                              <i class="fab fa-linkedin-in"></i>
+                          </a>
+                      </div>
+                  </form>
+              </div>
+          </div>
+
+          <div class="panels-container">
+              <div class="panel left-panel">
+                  <div class="content">
+                      <h3>New here ?</h3>
+                      <p>
+                          You can create new acount here.
+                      </p>
+                      <button class="btn btn-light" id="sign-up-btn">
+                          Sign up
+                      </button>
+                  </div>
+                  <img src="img/log.svg" class="image" alt="" />
+              </div>
+              <div class="panel right-panel">
+                  <div class="content">
+                      <h3>One of us ?</h3>
+                      <p>
+                          If you have an account login here.
+                      </p>
+                      <button class="btn btn-light" id="sign-in-btn">
+                          Sign in
+                      </button>
+                  </div>
+                  <img src="img/register.svg" class="image" alt="" />
+              </div>
+          </div>
+      </div>
+
+      <script src="app.js"></script>
+  </body>
+</html>
