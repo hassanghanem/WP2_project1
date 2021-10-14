@@ -12,7 +12,7 @@ $(document).ready(function () {
         //validation
         if (coursec.length == 0) {
             $('#p0').show();
-            var msg = $('#p0').text('Please enter Company name ');
+            var msg = $('#p0').text('Please enter Course Code ');
             $('#course_code').focus();
             return false;
         }
@@ -21,7 +21,7 @@ $(document).ready(function () {
         }
         if (coursen.length == 0) {
             $('#p1').show();
-            var msg = $('#p1').text('Please enter Car name');
+            var msg = $('#p1').text('Please enter Course name');
             $('#course_name').focus();
             return false;
         }
@@ -30,7 +30,7 @@ $(document).ready(function () {
         }
         if (studentn.length == 0) {
             $('#p2').show();
-            var msg = $('#p2').text('Please enter Cylander numver');
+            var msg = $('#p2').text('Please enter Student name');
             $('#student_name').focus();
             return false;
         }
@@ -39,7 +39,7 @@ $(document).ready(function () {
         }
         if (studentid.length == 0) {
             $('#p3').show();
-            var msg = $('#p3').text('Please enter date');
+            var msg = $('#p3').text('Please enter student id');
             $('#student_id').focus();
             return false;
         }
@@ -48,7 +48,7 @@ $(document).ready(function () {
         }
         if (semester.length == 0) {
             $('#p4').show();
-            var msg = $('#p4').text('Please enter Price');
+            var msg = $('#p4').text('Please enter semester');
             $('#semester_name').focus();
             return false;
         }
@@ -57,7 +57,7 @@ $(document).ready(function () {
         }
         if (date.length == 0) {
             $('#p4').show();
-            var msg = $('#p4').text('Please enter Price');
+            var msg = $('#p4').text('Please enter date');
             $('#date').focus();
             return false;
         }
