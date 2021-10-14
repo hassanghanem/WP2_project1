@@ -57,7 +57,7 @@ $(document).ready(function () {
         }
         if (date.length == 0) {
             $('#p5').show();
-            var msg = $('#p4').text('Please enter date');
+            var msg = $('#p5').text('Please enter date');
             $('#date').focus();
             return false;
         }
